@@ -1,7 +1,4 @@
-import Link from "next/link"
-import { Navitems } from "../data/data"
 import { BsTwitter, BsTwitterX, BsX } from 'react-icons/bs'
-import { GiMailbox } from "react-icons/gi"
 import { SiGmail } from "react-icons/si"
 import { TbCircleHalf2 } from "react-icons/tb"
 export const Header = () => {
@@ -16,11 +13,12 @@ export const Header = () => {
                     <a href="Contact Me">Contact Me</a>
                 </div>
             </div>
-            <div>
-                <ul className="flex gap-4">
-                    <li><BsTwitterX/></li>
-                    <li><SiGmail/></li>
-                    <li><TbCircleHalf2/></li>
+            <div className="px-2">
+                <ul className="flex gap-6 ">
+                    <li className="p-2 rounded-md border border-foreground/20"><BsTwitterX/></li>
+                    <li className="p-2 rounded-md border border-foreground/20"><SiGmail/></li>
+                    <li className="p-2 rounded-md border border-foreground/20">
+                    <TbCircleHalf2/></li>
                 </ul>
             </div>
         </div>
