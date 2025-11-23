@@ -11,7 +11,7 @@ export const ThemeHandle = () => {
     if(storedTheme == 'dark'){
         document.documentElement.classList.add('dark');
     } else {
-        document.documentElement.classList.add('light')
+        document.documentElement.classList.add('light');
     }
   }
 
@@ -32,10 +32,8 @@ export const ThemeHandle = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleTheme} className="p-0 m-0">
-        {isDark ? <TbCircleHalf2 /> : <TbCircleHalf2 />}
-      </button>
-    </div>
+      <a onClick={handleTheme} className="cursor-pointer">
+        {<TbCircleHalf2 />}
+      </a>
   );
 };

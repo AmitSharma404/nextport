@@ -4,7 +4,7 @@ import { TbCircleHalf2 } from "react-icons/tb"
 import { ThemeHandle } from './ThemeHandle'
 export const Header = () => {
     return(
-        <div className="flex items-center justify-between px-5 py-3">
+        <div className="flex items-center justify-between px-5 py-3 w-full">
             <div className="flex gap-6">
                 <a href="home"
                 className="font-extrabold bg-foreground text-background px-1 rounded-md">A</a>
@@ -15,7 +15,7 @@ export const Header = () => {
                 </div>
             </div>
             <div className="px-2">
-                <ul className="flex gap-6 ">
+                <ul className="flex gap-6">
                     <li className="p-2 rounded-md border border-foreground/20"><BsTwitterX/></li>
                     <li className="p-2 rounded-md border border-foreground/20"><SiGmail/></li>
                     <li className="p-2 rounded-md border border-foreground/20">
