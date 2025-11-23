@@ -17,6 +17,10 @@
     --background: #020202;
     --foreground: #ededed;
   }
+  .dark{
+    --background: #ededed;
+    --foreground: #020202;
+  }
 }
 
 body {

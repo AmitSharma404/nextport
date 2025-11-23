@@ -1,26 +1,41 @@
-import { useState } from 'react';
-import { TbCircleHalf2 } from 'react-icons/tb';
-
+"use client";
+import { useEffect } from 'react';
+import { useState } from "react";
+import { TbCircleHalf2 } from "react-icons/tb";
 
 export const ThemeHandle = () => {
-    const [isDark,setDark] = useState(true);
+  const [isDark, setDark] = useState(true);
 
-
-    const handleTheme = () => {
-        if(!isDark){
+  const StoreTheme = () => {
+    const storedTheme = localStorage.getItem('theme');
+    if(storedTheme == 'dark'){
         document.documentElement.classList.add('dark');
-        setDark(true);
-        } else {
-            document.documentElement.classList.remove('dark')
-            setDark(false);
-        }
+    } else {
+        document.documentElement.classList.add('light')
     }
+  }
 
-    return(
-        <div>
-            <button onClick={handleTheme}>
-                {isDark ? <TbCircleHalf2/> : <TbCircleHalf2/>}
-            </button>
-        </div>
-    )
-}
+  useEffect(() => {
+    StoreTheme();
+  },[])
+
+  const handleTheme = () => {
+    if (!isDark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem('theme','dark')
+      setDark(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem('theme','light')
+      setDark(false);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={handleTheme} className="p-0 m-0">
+        {isDark ? <TbCircleHalf2 /> : <TbCircleHalf2 />}
+      </button>
+    </div>
+  );
+};

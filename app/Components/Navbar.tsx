@@ -1,6 +1,7 @@
 import { BsTwitter, BsTwitterX, BsX } from 'react-icons/bs'
 import { SiGmail } from "react-icons/si"
 import { TbCircleHalf2 } from "react-icons/tb"
+import { ThemeHandle } from './ThemeHandle'
 export const Header = () => {
     return(
         <div className="flex items-center justify-between px-5 py-3">
@@ -18,7 +19,7 @@ export const Header = () => {
                     <li className="p-2 rounded-md border border-foreground/20"><BsTwitterX/></li>
                     <li className="p-2 rounded-md border border-foreground/20"><SiGmail/></li>
                     <li className="p-2 rounded-md border border-foreground/20">
-                    <TbCircleHalf2/></li>
+                    <ThemeHandle/></li>
                 </ul>
             </div>
         </div>
