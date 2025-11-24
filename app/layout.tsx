@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import {Bitcount_Grid_Single} from 'next/font/google';
+import { Maven_Pro } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+const geistMaven = Maven_Pro({
+  variable:"--font-maven-pro",
+  subsets:['latin']
+})
+const bitCount = Bitcount_Grid_Single({
+  variable:"--font-bitcount-grid",
+  subsets:['latin']
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bitCount.variable}${geistMaven.variable} antialiased`}
       >
         {children}
       </body>
