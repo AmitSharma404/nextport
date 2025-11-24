@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <main className="flex  max-w-[600px] justify-center">
+      <main className="flex  max-w-[700px] justify-center">
         <Hero/>
         <Card/>
       </main>
