@@ -11,7 +11,7 @@ export const Header = () => {
         <div className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/10">
             <div className="flex gap-6">
                 <a href="home"
-                className="font-extrabold bg-foreground text-background px-1 rounded-md">A</a>
+                className="bg-foreground text-background px-1 rounded-md">A</a>
                 <div className="gap-4 hidden sm:flex">
                     <a href="Projects">Projects</a>
                     <a href="Experience">Experience</a>
