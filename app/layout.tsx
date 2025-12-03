@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import  Head  from "next/head";
-import {Kanit} from 'next/font/google'
+import {Ubuntu} from "next/font/google";
 import "./globals.css";
 
-const kanit = Kanit({subsets:['latin'],weight:['400','700']})
+const ubuntu = Ubuntu({subsets:['latin'],weight:['300','700']})
 
 export const metadata: Metadata = {
   title: "Amit.dev",
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
     <Head><link rel="icon" href="/name.jpeg" /></Head>
       <body
-        className={kanit.className + 'bg-white dark:bg-black text-black dark:text-white'}
+        className={ubuntu.className + 'bg-white dark:bg-black text-black dark:text-white'}
       >
         {children}
       </body>
