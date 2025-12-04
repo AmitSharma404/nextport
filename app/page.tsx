@@ -4,12 +4,12 @@ import { Hero } from "./Components/Hero";
 import { Header } from "./Components/Navbar";
 export default function Home() {
   return (
-    <>
+    <div className="">
       <Header/>
-      <main className="flex  max-w-[700px] justify-center">
+      <main className="flex items-center justify-center">
         <Hero/>
         <Card/>
       </main>
-    </>
+    </div>
   );
 }

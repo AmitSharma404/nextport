@@ -18,21 +18,38 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #020202;
-    --foreground: #ededed;
+    --foreground: #ffffff;
+    --primary: #ffffff32;
   }
   .dark{
     --background: #eeeeee;
     --foreground: #020202;
+    --primary: #00000032;
+  }
+}
+@layer base {
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu','Arial',"sans-serif";
   font-weight: 300;
+}
+
+@utility gradient {
+  background-size:10px 10px;
+  @apply bg-[linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%),linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%)];
+}
+@utility btn{
+  @apply px-2 flex items-center gap-2 py-1 border border-foreground/50 rounded-md transition hover:scale-105 hover:shadow-[2px_2px_#22222252];
+}
+
+@utility skillbtn{
+  @apply px-2 py-0.5 border border-foreground/50 rounded-lg text-sm transition;
 }

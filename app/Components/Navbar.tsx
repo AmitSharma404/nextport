@@ -7,8 +7,9 @@ import { ThemeHandle } from './ThemeHandle'
 import { GiHamburgerMenu } from 'react-icons/gi';
 export const Header = () => {
 
+    const color = 'bg-white'
     return(
-        <div className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/10">
+        <div style={{}} className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/20 border-dashed backdrop-blur-xl z-10 ">
             <div className="flex gap-6">
                 <a href="home"
                 className="bg-foreground text-background px-1 rounded-md">A</a>

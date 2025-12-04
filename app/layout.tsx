@@ -3,7 +3,7 @@ import  Head  from "next/head";
 import {Ubuntu} from "next/font/google";
 import "./globals.css";
 
-const ubuntu = Ubuntu({subsets:['latin'],weight:['300','700']})
+const ubuntu = Ubuntu({subsets:['latin'],weight:['300','400','500','700']})
 
 export const metadata: Metadata = {
   title: "Amit.dev",
