@@ -47,7 +47,7 @@ body {
   @apply bg-[linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%),linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%)];
 }
 @utility btn{
-  @apply px-2 flex items-center gap-2 py-1 border border-foreground/50 rounded-md transition hover:scale-105 hover:shadow-[2px_2px_#22222252];
+  @apply sm:px-2 px-1 flex items-center gap-2 sm:py-0.5 border border-foreground/50 rounded-md transition hover:scale-105 hover:shadow-[2px_2px_#22222252];
 }
 
 @utility skillbtn{

@@ -1,8 +1,9 @@
 import { IconType } from "react-icons"
 import { BiLogoTailwindCss } from "react-icons/bi"
-import { DiCss3, DiHtml5, DiIllustrator, DiJavascript } from "react-icons/di"
+import { DiCss3, DiHtml5, DiIllustrator } from "react-icons/di"
 import { FaPython } from "react-icons/fa"
-import { SiMongodb, SiTypescript } from "react-icons/si"
+import { LiaNodeJs } from "react-icons/lia"
+import { SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiReact, SiRedux, SiTypescript } from "react-icons/si"
 
 
 const Navitems = [
@@ -44,7 +45,7 @@ const skills:skills[] = [
     {
         id:3,
         name:"JavaScript",
-        icon:DiJavascript,
+        icon:SiJavascript,
     },
     {
         id:4,
@@ -53,7 +54,7 @@ const skills:skills[] = [
     },
     {
         id:5,
-        name:"Tailwind",
+        name:"Tailwind CSS",
         icon: BiLogoTailwindCss
     },
     {
@@ -70,6 +71,41 @@ const skills:skills[] = [
         id:8,
         name:"Mongo DB",
         icon:SiMongodb
+    },
+    {
+        id:9,
+        name:"PostMan",
+        icon:SiPostman
+    },
+    {
+        id:10,
+        name:"SQl",
+        icon:SiMysql
+    },
+    {
+        id:11,
+        name:"Next Js",
+        icon:SiNextdotjs
+    },
+    {
+        id:12,
+        name:"Node Js",
+        icon:LiaNodeJs
+    },
+    {
+        id:13,
+        name:"Git",
+        icon:SiGit
+    },
+    {
+        id:14,
+        name:"React Js",
+        icon:SiReact
+    },
+    {
+        id:15,
+        name:"Redux",
+        icon:SiRedux
     }
 ]
 

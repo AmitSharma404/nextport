@@ -1,15 +1,11 @@
 'use client'
-import { useState } from 'react';
-import { BsTwitter, BsTwitterX, BsX } from 'react-icons/bs'
+import { BsTwitterX } from 'react-icons/bs'
 import { SiGmail } from "react-icons/si"
-import { TbCircleHalf2 } from "react-icons/tb"
 import { ThemeHandle } from './ThemeHandle'
-import { GiHamburgerMenu } from 'react-icons/gi';
 export const Header = () => {
 
-    const color = 'bg-white'
     return(
-        <div style={{}} className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/20 border-dashed backdrop-blur-xl z-10 ">
+        <div style={{}} className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/20 border-dashed z-10 sticky top-0 bg-background ">
             <div className="flex gap-6">
                 <a href="home"
                 className="bg-foreground text-background px-1 rounded-md">A</a>

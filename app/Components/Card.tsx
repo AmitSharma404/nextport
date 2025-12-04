@@ -13,8 +13,8 @@ export const Card = () => {
             </div>
             <button className='py-1 hover:shadow font-light rounded-xs mt-2'>Hire Me!</button>
             <div className='flex gap-2'>
-                <button className='p-2 rounded-md border border-foreground/20'><SiGmail/></button>
-                <button className='p-2 rounded-md border border-foreground/20'><FaLinkedinIn/></button>
+                <button className='p-2 rounded-md border border-foreground/20 hover:bg-foreground/10'><SiGmail/></button>
+                <button className='p-2 rounded-md border border-foreground/20 hover:bg-foreground/10'><FaLinkedinIn/></button>
             </div>
         </div>
     )
