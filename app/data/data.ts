@@ -1,6 +1,6 @@
 import { IconType } from "react-icons"
 import { BiLogoTailwindCss } from "react-icons/bi"
-import { DiCss3, DiHtml5, DiIllustrator } from "react-icons/di"
+import { DiCss3, DiHtml5, DiIllustrator, DiJava } from "react-icons/di"
 import { FaPython } from "react-icons/fa"
 import { LiaNodeJs } from "react-icons/lia"
 import { SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiReact, SiRedux, SiTypescript } from "react-icons/si"
@@ -106,6 +106,11 @@ const skills:skills[] = [
         id:15,
         name:"Redux",
         icon:SiRedux
+    },
+    {
+        id:16,
+        name:"Java",
+        icon:DiJava
     }
 ]
 
