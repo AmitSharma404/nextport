@@ -5,7 +5,7 @@ import { ThemeHandle } from './ThemeHandle'
 export const Header = () => {
 
     return(
-        <div style={{}} className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/20 border-dashed z-10 sticky top-0 bg-background ">
+        <div style={{}} className="flex items-center justify-between px-5 py-3 w-full border-b border-foreground/10 border-dashed z-10 sticky top-0 bg-background ">
             <div className="flex gap-6">
                 <a href="home"
                 className="bg-foreground text-background px-1 rounded-md font-bold">A</a>

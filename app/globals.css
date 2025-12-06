@@ -19,12 +19,12 @@
   :root {
     --background: #020202;
     --foreground: #ffffff;
-    --primary: #ffffff32;
+    --primary: #ffffff12;
   }
   .dark{
-    --background: #eeeeee;
+    --background: #ffffff;
     --foreground: #020202;
-    --primary: #00000032;
+    --primary: #00000012;
   }
 }
 @layer base {
@@ -47,9 +47,9 @@ body {
   @apply bg-[linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%),linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%)];
 }
 @utility btn{
-  @apply sm:px-2 px-1 flex items-center gap-2 sm:py-0.5 border border-foreground/50 rounded-md transition hover:scale-105 hover:shadow-[2px_2px_#22222252];
+  @apply sm:px-2 px-1 flex items-center gap-2 sm:py-0.5 border border-foreground/50 rounded-none transition hover:scale-105 hover:shadow-[2px_2px_#22222252];
 }
 
 @utility skillbtn{
-  @apply px-2 py-0.5 border border-foreground/50 rounded-lg text-sm transition;
+  @apply px-2 py-0.5 border text-sm transition;
 }

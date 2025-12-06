@@ -26,92 +26,110 @@ const AboutMe = {
 }
 
 interface skills {
-    id:number,
-    name:string,
-    icon:IconType
+    id: number,
+    name: string,
+    icon: IconType,
+    color: string
 }[];
 
-const skills:skills[] = [
+const skills: skills[] = [
     {
         id: 1,
         name: "Html5",
         icon: DiHtml5,
+        color: "#E34F26"
     },
     {
-        id:2,
-        name:"CSS3",
-        icon: DiCss3
+        id: 2,
+        name: "CSS3",
+        icon: DiCss3,
+        color: "#1572B6"
     },
     {
-        id:3,
-        name:"JavaScript",
-        icon:SiJavascript,
+        id: 3,
+        name: "JavaScript",
+        icon: SiJavascript,
+        color: "#F7DF1E"
     },
     {
-        id:4,
-        name:"TypeScript",
-        icon:SiTypescript,
+        id: 4,
+        name: "TypeScript",
+        icon: SiTypescript,
+        color: "#3178C6"
     },
     {
-        id:5,
-        name:"Tailwind CSS",
-        icon: BiLogoTailwindCss
+        id: 5,
+        name: "Tailwind CSS",
+        icon: BiLogoTailwindCss,
+        color: "#38BDF8"
     },
     {
-        id:6,
-        name:"python",
-        icon:FaPython
+        id: 6,
+        name: "Python",
+        icon: FaPython,
+        color: "#3776AB"
     },
     {
-        id:7,
-        name:"illustrator",
-        icon:DiIllustrator
+        id: 7,
+        name: "Illustrator",
+        icon: DiIllustrator,
+        color: "#FF9A00"
     },
     {
-        id:8,
-        name:"Mongo DB",
-        icon:SiMongodb
+        id: 8,
+        name: "Mongo DB",
+        icon: SiMongodb,
+        color: "#47A248"
     },
     {
-        id:9,
-        name:"PostMan",
-        icon:SiPostman
+        id: 9,
+        name: "PostMan",
+        icon: SiPostman,
+        color: "#FF6C37"
     },
     {
-        id:10,
-        name:"SQl",
-        icon:SiMysql
+        id: 10,
+        name: "SQL",
+        icon: SiMysql,
+        color: "#4479A1"
     },
     {
-        id:11,
-        name:"Next Js",
-        icon:SiNextdotjs
+        id: 11,
+        name: "Next Js",
+        icon: SiNextdotjs,
+        color: "#000000"
     },
     {
-        id:12,
-        name:"Node Js",
-        icon:LiaNodeJs
+        id: 12,
+        name: "Node Js",
+        icon: LiaNodeJs,
+        color: "#339933"
     },
     {
-        id:13,
-        name:"Git",
-        icon:SiGit
+        id: 13,
+        name: "Git",
+        icon: SiGit,
+        color: "#F05032"
     },
     {
-        id:14,
-        name:"React Js",
-        icon:SiReact
+        id: 14,
+        name: "React Js",
+        icon: SiReact,
+        color: "#61DAFB"
     },
     {
-        id:15,
-        name:"Redux",
-        icon:SiRedux
+        id: 15,
+        name: "Redux",
+        icon: SiRedux,
+        color: "#764ABC"
     },
     {
-        id:16,
-        name:"Java",
-        icon:DiJava
+        id: 16,
+        name: "Java",
+        icon: DiJava,
+        color: "#007396"
     }
+
 ]
 
-export  default  {skills,AboutMe,Navitems};
+export default { skills, AboutMe, Navitems };
