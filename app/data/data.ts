@@ -9,7 +9,7 @@ import { SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiReac
 const Navitems = [
     {
         title: "X",
-        link: "#https:/twitter.com",
+        link: "#https://twitter.com/AmitSharma404",
     },
     {
         title: "Work Experience",

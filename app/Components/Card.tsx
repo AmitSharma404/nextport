@@ -1,8 +1,6 @@
 import nextsvd from '../tom calling.png'
 import Image from 'next/image'
-import { FaLinkedin } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa6'
-import { LiaLinkedin } from 'react-icons/lia'
 import { SiGmail } from 'react-icons/si'
 export const Card = () => {
     return(
