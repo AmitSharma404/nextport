@@ -22,7 +22,13 @@ const Navitems = [
 ]
 
 const AboutMe = {
-    text: `Hi, I'm Amit, a Full Stack Developer with expertise in the MERN stack, TypeScript, and Socket.io. Experienced in building scalable web apps, with a focus on creating seamless user experiences and robust backend systems.`
+    text: ` Hi, I'm Amit, `,
+    text1:" Full Stack Developer ",
+    text2:` a with expertise in the , `,
+    text3:" MERN stack ",
+    text4:` TypeScript, and Socket.io. Experienced in building scalable web apps, with a focus on creating seamless user experiences and robust `,
+    text5:` frontend system.`
+
 }
 
 interface skills {

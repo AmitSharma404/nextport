@@ -53,3 +53,6 @@ body {
 @utility skillbtn{
   @apply px-2 py-0.5 border text-sm transition;
 }
+@utility text{
+  @apply items-center justify-center inline-block p-1 font-medium;
+}
