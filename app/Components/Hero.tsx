@@ -1,13 +1,18 @@
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import data from "../data/data";
+import myimg from '../amit.jpg';
 import { Skills } from "./Skills";
 import { Footer } from "./footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Hero = () => {
   return (
     <div className="sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] ">
+      <div className="w-24 h-24 border-4 border-foreground/10  m-2 overflow-hidden rounded-xl relative">
+        <Image src={myimg} alt="Amit Sharma" className="top-0 absolute " />
+      </div>
       <h1 className="text-4xl font-semibold my-2 text-foreground">
         Amit Sharma
       </h1>
