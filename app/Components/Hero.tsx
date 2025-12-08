@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] ">
+    <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] ">
       <div className="sm:flex items-center justify-center  border-b border-foreground/10 py-4 gap-4">
         <div>
           <div className="w-24 h-24 border-4 border-foreground/10  m-2 overflow-hidden rounded-xl relative">
@@ -21,11 +21,11 @@ export const Hero = () => {
             Amit Sharma
           </h1>
           <p className="text-foreground/70 tracking-wide font-normal border-dashed text-sm sm:text-md">
-            {data.AboutMe.text} <span className="text-sky-500 bg-sky-500/10 p-1 text">{data.AboutMe.text1}</span>
+            {data.AboutMe.text} <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5">{data.AboutMe.text1}</span>
             {data.AboutMe.text2}
-            <span className="text-pink-500 bg-pink-500/10 p-1 text">{data.AboutMe.text3}</span>
+            <span className="text-pink-500 bg-pink-500/10 m-1 text px-1 py-0.5">{data.AboutMe.text3}</span>
             {data.AboutMe.text4}
-            <span className="text-teal-500 bg-teal-500/10 p-1 text">{data.AboutMe.text5}</span>
+            <span className="text-teal-500 bg-teal-500/10 m-1 text px-1 py-0.5">{data.AboutMe.text5}</span>
           </p> 
         </div>
       </div>
