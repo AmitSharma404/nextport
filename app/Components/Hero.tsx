@@ -9,35 +9,52 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] ">
-      <div className="sm:flex items-center justify-center  border-b border-foreground/10 py-4 gap-4">
+    <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] overflow-hidden ">
+      <div className="sm:flex items-center justify-center border-b border-foreground/10 py-4 gap-4 relative group">
         <div>
-          <div className="w-24 h-24 border-4 border-foreground/10 border-t-red-500 
-         border-r-blue-500 
-         border-b-green-500 
-         border-l-yellow-500 
-           m-2 overflow-hidden rounded-full relative rotate-354">
-          <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" />
-        </div>
+          <span className="h-px rounded-full w-30 bg-linear-to-r from-transparent to-sky-500 absolute -bottom-px group-hover:animate-go hidden group-hover:block shadow-sm "></span>
+          <div
+            className="w-24 h-24 border-4 border-foreground/10 border-t-red-500 
+            border-r-blue-500 
+            border-b-green-500 
+            border-l-yellow-500 
+            m-2 overflow-hidden rounded-full relative rotate-354"
+          >
+            <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" />
+          </div>
         </div>
         <div className="">
-          <h1 className="text-4xl font-semibold my-2 text-foreground">
-            Amit Sharma — <span className="text-foreground/50">A full Stack Developer</span>
+          <h1 className="sm:text-4xl text-3xl font-semibold my-2 text-foreground">
+            Amit Sharma —{" "}
+            <span className="text-foreground/50">A full Stack Developer</span>
           </h1>
-          <p className="text-foreground/70 tracking-wide font-normal border-dashed text-sm sm:text-md">
-            {data.AboutMe.text} <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0_0_5px_inset]">{data.AboutMe.text1}</span>
-            {data.AboutMe.text2}
-            <span className="text-pink-500 bg-pink-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0_5px_inset]">{data.AboutMe.text3}</span>
-            {data.AboutMe.text4}
-            <span className="text-teal-500 bg-teal-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0_5px_inset]">{data.AboutMe.text5}</span>
-          </p> 
         </div>
       </div>
+      
+      <p className="text-foreground/70 tracking-wide font-normal border-dashed text-sm sm:text-md py-4">
+        {data.AboutMe.text}{" "}
+        <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0_0_5px_inset]">
+          {data.AboutMe.text1}
+        </span>
+        {data.AboutMe.text2}
+        <span
+          className="text-pink-500 bg-pink-500/10 m-1 text px-1 py-0.5
+            shadow-[0_0_5px_inset]"
+        >
+          {data.AboutMe.text3}
+        </span>
+        {data.AboutMe.text4}
+        <span
+          className="text-teal-500 bg-teal-500/10 m-1 text px-1 py-0.5
+            shadow-[0_0_5px_inset]"
+        >
+          {data.AboutMe.text5}
+        </span>
+      </p>
       <div className="py-2 flex items-center gap-2">
-        <h2 className="font-medium text-2xl relative">Connect With Me!
-        <span className="size-3 bg-green-500 block rounded-full absolute top-2.5 -right-5"></span>
+        <h2 className="font-medium text-2xl relative">
+          Connect With Me!
+          <span className="size-3 bg-green-500 block rounded-full absolute top-2.5 -right-5"></span>
         </h2>
         <span className="size-3 animate-ping bg-green-500 block rounded-full"></span>
       </div>
