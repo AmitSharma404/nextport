@@ -33,7 +33,7 @@ export const Hero = () => {
       
       <p className="text-foreground/70 tracking-wide font-normal border-dashed text-sm sm:text-md py-4">
         {data.AboutMe.text}{" "}
-        <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0_0_5px_inset]">
+        <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0px_0px_5px_inset]">
           {data.AboutMe.text1}
         </span>
         {data.AboutMe.text2}
