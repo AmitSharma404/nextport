@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { BsTwitterX } from 'react-icons/bs'
 import { SiGmail } from "react-icons/si"
 import { ThemeHandle } from './ThemeHandle'
@@ -16,10 +17,11 @@ export const Header = () => {
             </div>
             <div className="sm:px-2">
                 <ul className="flex sm:gap-6 gap-3">
-                    <li className="p-2 rounded-md border border-foreground/20"><BsTwitterX/></li>
-                    <li className="p-2 rounded-md border border-foreground/20"><SiGmail/></li>
-                    <li className="p-2 rounded-md border border-foreground/20">
-                    <ThemeHandle/></li>
+                    <Link href={"https://x.com/AmitSharma404"} className='p-2 rounded-md border border-foreground/20 cursor-pointer hover:bg-foreground/10'><BsTwitterX/></Link>
+                    <Link href="mailto:sandy31524@gmail.com" className="p-2 rounded-md border border-foreground/20 cursor-pointer hover:bg-foreground/10"><SiGmail/></Link>
+                    <li className="p-2 rounded-md border border-foreground/20 hover:bg-foreground/10 ">
+                    <ThemeHandle/>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -14,6 +14,7 @@
   --font-mono: var(--font-geist-mono);
   --font-grid:var(--font-maven-pro);
   --animate-go: go 3s infinite linear;
+  --animate-slide-down: slideDown 1s ease-in-out forwards;
 
   @keyframes go {
     0% {
@@ -22,7 +23,7 @@
     }
     100% {
       transform: translateX(700px);
-      filter: hue-rotate(-100deg);
+      filter: hue-rotate(-180deg);
     }
 
   }
@@ -69,3 +70,4 @@ body {
 @utility text{
   @apply items-center justify-center inline-block p-1 font-medium;
 }
+

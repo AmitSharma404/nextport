@@ -6,6 +6,7 @@ import { Skills } from "./Skills";
 import { Footer } from "./footer";
 import Link from "next/link";
 import Image from "next/image";
+import { Projects } from "./Projects";
 
 export const Hero = () => {
   return (
@@ -93,6 +94,7 @@ export const Hero = () => {
 
         <div className="Projects border-b border-dashed border-foreground/10 ">
           <h2 className="text-2xl font-medium py-2">Projects</h2>
+          <Projects/>
         </div>
         <div className="gradient h-10 border-b border-dashed border-foreground/10"></div>
         <div>
