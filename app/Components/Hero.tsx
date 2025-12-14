@@ -29,6 +29,9 @@ export const Hero = () => {
             Amit Sharma —{" "}
             <span className="text-foreground/50">A full Stack Developer</span>
           </h1>
+          <span className="text-xs rounded-full border border-foreground/20 px-2 py-1 shadow-[0_2px_2px_inset]/20 font-medium"> Available for work
+              <span className="inline-block bg-sky-500 rounded-full size-2 ml-1"></span>
+            </span>
         </div>
       </div>
       
@@ -55,9 +58,9 @@ export const Hero = () => {
       <div className="py-2 flex items-center gap-2">
         <h2 className="font-medium text-2xl relative">
           Connect With Me!
-          <span className="size-3 bg-green-500 block rounded-full absolute top-2.5 -right-5"></span>
+          <span className="size-2 bg-green-500 block rounded-full absolute top-3 -right-4"></span>
         </h2>
-        <span className="size-3 animate-ping bg-green-500 block rounded-full"></span>
+        <span className="size-2 animate-ping bg-green-500 block rounded-full"></span>
       </div>
       <div className="h-10 border-y border-dashed border-foreground/10 gradient"></div>
       <div className="">
