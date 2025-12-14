@@ -6,11 +6,11 @@ export const Card = () => {
   return (
     <div className="top-20 left-2 rounded-lg p-4 bg-foreground/5 sm:fixed xl:block hidden h-auto">
       <p className="font-light text-sm py-1">Want a Developer?</p>
-      <div className="h-30 w-40 overflow-hidden relative bg-neutral-900 my-2 rounded-md ">
+      <div className="h-30 w-40 overflow-hidden relative bg-neutral-900 my-2 rounded-md  mask-b-from-50%">
         <Image
           src={nextsvd}
           alt=""
-          className="size-auto overflow-x-hidden scale-140 -top-14 absolute "
+          className="size-auto overflow-x-hidden scale-140 -top-14 absolute mask-"
         />
       </div>
       <button className="py-1 hover:shadow font-light rounded-xs mt-2">
