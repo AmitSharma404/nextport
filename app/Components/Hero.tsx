@@ -11,14 +11,11 @@ import { Projects } from "./Projects";
 export const Hero = () => {
   return (
     <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] overflow-hidden ">
-      <div className="sm:flex items-center justify-center border-b border-foreground/10 py-4 gap-4 relative group">
+      <div className="sm:flex items-center justify-center border-b border-foreground/10 sm:py-10 py-4 gap-6 relative group">
         <div>
           <span className="h-px rounded-full w-30 bg-linear-to-r from-transparent to-sky-500 absolute -bottom-px group-hover:animate-go hidden group-hover:block shadow-sm "></span>
           <div
-            className="w-24 h-24 border-4 border-foreground/10 border-t-red-500 
-            border-r-blue-500 
-            border-b-green-500 
-            border-l-yellow-500 
+            className="w-24 h-24
             m-2 overflow-hidden rounded-full relative rotate-354"
           >
             <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" />
