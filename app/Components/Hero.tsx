@@ -26,13 +26,13 @@ export const Hero = () => {
             Amit Sharma —{" "}
             <span className="text-foreground/50">A full Stack Developer</span>
           </h1>
-          <span className="text-xs rounded-full border border-foreground/20 px-2 py-1 shadow-[0_2px_2px_inset]/20 font-medium"> Available for work
+          <span className="text-xs rounded-full border border-foreground/10 px-2 py-1 shadow-[0px_2px_3px_inset]/40 font-semibold"> Available for work
               <span className="inline-block bg-sky-500 rounded-full size-2 ml-1"></span>
             </span>
         </div>
       </div>
       
-      <p className="text-foreground/70 tracking-wide font-normal border-dashed text-sm sm:text-md py-4">
+      <p className="text-foreground/70 tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
         {data.AboutMe.text}{" "}
         <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0px_0px_5px_inset]">
           {data.AboutMe.text1}
@@ -40,7 +40,7 @@ export const Hero = () => {
         {data.AboutMe.text2}
         <span
           className="text-pink-500 bg-pink-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0_5px_inset]"
+            shadow-[0_0px_5px_inset]"
         >
           {data.AboutMe.text3}
         </span>
@@ -97,8 +97,8 @@ export const Hero = () => {
           <Projects/>
         </div>
         <div className="gradient h-10 border-b border-dashed border-foreground/10"></div>
-        <div>
-          <h2 className="text-2xl font-medium">Skills</h2>
+        <div className="py-2">
+          <h2 className="text-2xl font-medium py-2">Skills</h2>
           <Skills />
         </div>
       </div>

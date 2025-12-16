@@ -22,8 +22,8 @@ const Navitems = [
 ]
 
 const AboutMe = {
-    text: ` Hi, I'm Amit, `,
-    text1:" a Full Stack Developer ",
+    text: ` Hi, I'm Amit, a `,
+    text1:"Full Stack Developer ",
     text2:` with expertise in the , `,
     text3:" MERN stack ",
     text4:` TypeScript, and Socket.io. Experienced in building scalable web apps, with a focus on creating seamless user experiences and robust `,

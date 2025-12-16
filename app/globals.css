@@ -33,12 +33,12 @@
   :root {
     --background: #020202;
     --foreground: #ffffff;
-    --primary: #ffffff12;
+    --primary: #ffffff15;
   }
   .dark{
     --background: #ffffff;
     --foreground: #020202;
-    --primary: #00000012;
+    --primary: #00000015;
   }
 }
 @layer base {
@@ -52,7 +52,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Ubuntu','Arial',"sans-serif";
+  font-family: 'lexend','Arial',"sans-serif";
   font-weight: 300;
 }
 
@@ -65,9 +65,9 @@ body {
 }
 
 @utility skillbtn{
-  @apply px-2 py-0.5 border text-sm transition;
+  @apply px-2 py-0.5 border text-sm transition text-foreground/80;
 }
 @utility text{
-  @apply items-center justify-center inline-block p-1 font-medium;
+  @apply items-center justify-center inline-block p-1 font-normal;
 }
 
