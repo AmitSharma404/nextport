@@ -1,3 +1,4 @@
+"use client";
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import data from "../data/data";
@@ -7,10 +8,13 @@ import { Footer } from "./footer";
 import Link from "next/link";
 import Image from "next/image";
 import { Projects } from "./Projects";
-
+import { Header } from "./Navbar";
 export const Hero = () => {
+  
   return (
-    <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] overflow-hidden ">
+    <div className="w-full flex flex-col items-center justify-center">
+    <Header /> 
+    <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] overflow-hidden">
       <div className="sm:flex items-center justify-center border-b border-foreground/10 sm:py-10 py-4 gap-6 relative group">
         <div>
           <span className="h-px rounded-full w-30 bg-linear-to-r from-transparent to-sky-500 absolute -bottom-px group-hover:animate-go hidden group-hover:block shadow-sm "></span>
@@ -60,7 +64,7 @@ export const Hero = () => {
         <span className="size-2 animate-ping bg-green-500 block rounded-full"></span>
       </div>
       <div className="h-10 border-y border-dashed border-foreground/10 gradient"></div>
-      <div className="">
+      <div className="py-4">
         <p className="text-lg py-1 font-medium">Let&#39;s Collaborate</p>
         <p className="text-foreground/60 py-1 text-xs sm:text-sm font-light">
           I&#39;m always open to new opportunities, collaborations, or simply
@@ -97,14 +101,15 @@ export const Hero = () => {
           <Projects/>
         </div>
         <div className="gradient h-10 border-b border-dashed border-foreground/10"></div>
-        <div className="py-2">
+        <div className="pb-24">
           <h2 className="text-2xl font-medium py-2">Skills</h2>
           <Skills />
         </div>
       </div>
-      <div className="">
+      <div className="flex items-end justify-center  mt-2 sm:mt-10 pb-4">
         <Footer />
       </div>
+    </div>
     </div>
   );
 };
