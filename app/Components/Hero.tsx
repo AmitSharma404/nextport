@@ -23,7 +23,7 @@ export const Hero = () => {
         </div>
         <div className="">
           <h1 className="sm:text-4xl text-3xl font-semibold my-2 text-foreground">
-            Amit Sharma —{" "}
+            Amit Sharma — {" "}
             <span className="text-foreground/50">A full Stack Developer</span>
           </h1>
           <span className="text-xs rounded-full border border-foreground/10 px-2 py-1 shadow-[0px_2px_3px_inset]/40 font-semibold"> Available for work

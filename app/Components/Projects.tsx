@@ -7,7 +7,7 @@ import Link from "next/link";
 export const Projects = () => {
   return (
     <div className="flex flex-col gap-5 py-2">
-      <div className="gap-4 sm:flex">
+      <div className="gap-4 sm:flex ">
         <Image
           src={img}
           width={350}
