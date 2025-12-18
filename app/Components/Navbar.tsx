@@ -28,11 +28,11 @@ export const Header = () => {
       <div className="flex gap-6">
         <a
           href="home"
-          className="bg-foreground text-background px-2 card font-bold"
+          className="bg-foreground text-background px-2 card font-bold text-2xl"
         >
           A
         </a>
-        <div className="gap-4 hidden sm:flex font-medium">
+        <div className="gap-4 hidden sm:flex font-medium items-center">
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contactme">Contact Me</a>

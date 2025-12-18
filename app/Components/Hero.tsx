@@ -7,6 +7,7 @@ import { Skills } from "./Skills";
 import { Footer } from "./footer";
 import Link from "next/link";
 import Image from "next/image";
+import company from "../company.png";
 import { Projects } from "./Projects";
 import { Header } from "./Navbar";
 export const Hero = () => {
@@ -38,20 +39,20 @@ export const Hero = () => {
       
       <p className="text-foreground/70 tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
         {data.AboutMe.text}{" "}
-        <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0px_0px_5px_inset]">
+        <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0px_0px_5px_inset] card">
           {data.AboutMe.text1}
         </span>
         {data.AboutMe.text2}
         <span
           className="text-pink-500 bg-pink-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0px_5px_inset]"
+            shadow-[0_0px_5px_inset] card"
         >
           {data.AboutMe.text3}
         </span>
         {data.AboutMe.text4}
         <span
           className="text-teal-500 bg-teal-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0_5px_inset]"
+            shadow-[0_0_5px_inset] card"
         >
           {data.AboutMe.text5}
         </span>
@@ -92,8 +93,17 @@ export const Hero = () => {
           </button>
         </div>
         <div className="h-10 border-y border-dashed border-foreground/10 gradient"></div>
-        <div className="work-exp border-b border-dashed border-foreground/10" id="experience">
+        <div className="work-exp border-b border-dashed border-foreground/10 py-2" id="experience">
           <h1 className="text-2xl font-medium">Work Experience</h1>
+          <div className="flex items-center gap-4 py-4">
+            <div className="h-12 w-12">
+              <Image src={company} alt="" className="bg-foreground p-1 card" />
+            </div>
+            <div>
+              <h3 className="font-medium text-foreground/80">Techgrah Consulting</h3>
+              <p className="text-foreground/50 text-xs font-normal">Web designer & Graphic (onsite) Jan 2025 - March 2025</p>
+            </div>
+          </div>
         </div>
 
         <div className="Projects border-b border-dashed border-foreground/10 ">
