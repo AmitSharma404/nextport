@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -61,13 +62,25 @@ body {
   @apply bg-[linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%),linear-gradient(45deg,transparent_49%,var(--primary)_49%,var(--primary)_51%,transparent_51%)];
 }
 @utility btn{
-  @apply sm:px-2 px-1 flex items-center gap-2 sm:py-0.5 border border-foreground/50 rounded-none transition-all duration-200 hover:scale-105 hover:shadow-[2px_2px_#22222252];
+  @apply sm:px-2 px-1 flex items-center gap-2 sm:py-0.5 border border-foreground/50 rounded-none transition-all duration-200 hover:scale-105 hover:shadow-md/20;
+  border-radius: 90px;
+  corner-shape: squircle;
 }
 
 @utility skillbtn{
-  @apply px-2 py-0.5 border text-sm transition text-foreground/80;
+  @apply px-2 py-0.5 text-sm transition text-foreground/80 border border-foreground/50;
+  border-radius: 2rem;
+  corner-shape: squircle;
 }
 @utility text{
   @apply items-center justify-center inline-block p-1 font-normal;
+}
+@utility squircles {
+  border-radius: 90px;
+  corner-shape: squircle;
+}
+@utility card {
+  border-radius: 30px;
+  corner-shape: squircle;
 }
 

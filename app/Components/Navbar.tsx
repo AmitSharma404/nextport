@@ -8,7 +8,7 @@ export const Header = () => {
   const [IsScroll, setIsScroll] = useState(false);
 
   const handleScroll = () => {
-    return window.scrollY > 10 ? setIsScroll(true) : setIsScroll(false);
+    return window.scrollY > 50 ? setIsScroll(true) : setIsScroll(false);
   };
 
   useEffect(() => {
@@ -19,40 +19,40 @@ export const Header = () => {
   }, [IsScroll]);
   return (
     <div
-      className={`flex items-center justify-between px-3 sm:px-5 py-3  border-foreground/10 transition-all duration-300 z-10  top-0 bg-none backdrop-blur-lg sticky ${
+      className={`flex items-center justify-between px-3 sm:px-5 py-3  border-foreground/10 transition-all duration-300 z-10 top-0 bg-none backdrop-blur-lg sticky ${
         IsScroll
-          ? "w-full sm:w-[800px] sm:top-5 sm:rounded-4xl border border-foreground/5"
+          ? "w-full sm:w-[800px] sm:top-5 sm:squircles border border-foreground/10"
           : "bg-transparent w-full border-b sm:border-dashed"
       }`}
     >
       <div className="flex gap-6">
         <a
           href="home"
-          className="bg-foreground text-background px-1 rounded-md font-bold"
+          className="bg-foreground text-background px-2 card font-bold"
         >
           A
         </a>
         <div className="gap-4 hidden sm:flex font-medium">
-          <a href="Projects">Projects</a>
-          <a href="Experience">Experience</a>
-          <a href="Contact Me">Contact Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contactme">Contact Me</a>
         </div>
       </div>
       <div className="sm:px-2">
         <ul className="flex sm:gap-6 gap-3">
           <Link
             href={"https://x.com/AmitSharma404"}
-            className="p-2 rounded-md border border-foreground/20 cursor-pointer hover:bg-foreground/10"
+            className="p-2 squircles border border-foreground/20 cursor-pointer hover:bg-foreground/10"
           >
             <BsTwitterX />
           </Link>
           <Link
             href="mailto:sandy31524@gmail.com"
-            className="p-2 rounded-md border border-foreground/20 cursor-pointer hover:bg-foreground/10"
+            className="p-2 squircles border border-foreground/20 cursor-pointer hover:bg-foreground/10"
           >
             <SiGmail />
           </Link>
-          <li className="p-2 rounded-md border border-foreground/20 hover:bg-foreground/10 ">
+          <li className="p-2 squircles border border-foreground/20 hover:bg-foreground/10 ">
             <ThemeHandle />
           </li>
         </ul>

@@ -20,9 +20,9 @@ export const Hero = () => {
           <span className="h-px rounded-full w-30 bg-linear-to-r from-transparent to-sky-500 absolute -bottom-px group-hover:animate-go hidden group-hover:block shadow-sm "></span>
           <div
             className="w-24 h-24
-            m-2 overflow-hidden rounded-full relative rotate-354"
+            sm:mx-4 overflow-hidden card relative rotate-0 shadow-lg shadow-neutral-600/50"
           >
-            <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" />
+            <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" width={300} height={300} />
           </div>
         </div>
         <div className="">
@@ -30,7 +30,7 @@ export const Hero = () => {
             Amit Sharma — {" "}
             <span className="text-foreground/50">A full Stack Developer</span>
           </h1>
-          <span className="text-xs rounded-full border border-foreground/10 px-2 py-1 shadow-[0px_2px_3px_inset]/40 font-semibold"> Available for work
+          <span className="text-xs rounded-full px-2 py-1 shadow-[0px_2px_3px_inset]/40 font-semibold"> Available for work
               <span className="inline-block bg-sky-500 rounded-full size-2 ml-1"></span>
             </span>
         </div>
@@ -92,7 +92,7 @@ export const Hero = () => {
           </button>
         </div>
         <div className="h-10 border-y border-dashed border-foreground/10 gradient"></div>
-        <div className="work-exp border-b border-dashed border-foreground/10">
+        <div className="work-exp border-b border-dashed border-foreground/10" id="experience">
           <h1 className="text-2xl font-medium">Work Experience</h1>
         </div>
 

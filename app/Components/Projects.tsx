@@ -6,14 +6,14 @@ import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
 export const Projects = () => {
   return (
-    <div className="flex flex-col gap-5 py-4">
+    <div className="flex flex-col gap-5 py-4" id="projects">
       <div className="gap-4 sm:flex ">
         <Image
           src={img}
           width={350}
           height={300}
           alt="img"
-          className="rounded-lg"
+          className="card"
         />
         <div>
           <h3 className="text-lg font-normal mb-2">Cool Card</h3>
@@ -43,7 +43,7 @@ export const Projects = () => {
           width={350}
           height={300}
           alt="img"
-          className="rounded-lg"
+          className="card"
         />
         <div>
           <h3 className="text-lg font-normal mb-2">Spotify Clone</h3>
