@@ -13,7 +13,7 @@ import { Header } from "./Navbar";
 export const Hero = () => {
   
   return (
-    <div className="w-full flex flex-col items-center justify-center">
+    <div className="w-full flex flex-col items-center justify-center" id="home">
     <Header /> 
     <div className="px-2 sm:px-0 border-x border-foreground/10 border-dashed flex flex-col sm:max-w-[700px] overflow-hidden">
       <div className="sm:flex items-center justify-center border-b border-foreground/10 sm:py-10 py-4 gap-6 relative group">
@@ -21,7 +21,7 @@ export const Hero = () => {
           <span className="h-px rounded-full w-30 bg-linear-to-r from-transparent to-sky-500 absolute -bottom-px group-hover:animate-go hidden group-hover:block shadow-sm "></span>
           <div
             className="w-24 h-24
-            sm:mx-4 overflow-hidden card relative rotate-0 shadow-lg shadow-neutral-600/50"
+            sm:mx-4 overflow-hidden card relative rotate-354 shadow-lg shadow-neutral-600/50"
           >
             <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" width={300} height={300} />
           </div>
@@ -37,7 +37,7 @@ export const Hero = () => {
         </div>
       </div>
       
-      <p className="text-foreground/70 tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
+      <p className="text-foreground/50 tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
         {data.AboutMe.text}{" "}
         <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0px_0px_5px_inset] card">
           {data.AboutMe.text1}
