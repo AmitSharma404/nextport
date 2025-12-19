@@ -27,7 +27,7 @@ export const Header = () => {
     >
       <div className="flex gap-6">
         <a
-          href="#home"
+          href="#"
           className="bg-foreground text-background px-2 card font-bold text-2xl"
         >
           A
