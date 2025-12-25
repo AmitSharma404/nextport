@@ -2,8 +2,9 @@ import { IconType } from "react-icons"
 import { BiLogoTailwindCss } from "react-icons/bi"
 import { DiCss3, DiHtml5, DiIllustrator, DiJava } from "react-icons/di"
 import { FaPython } from "react-icons/fa"
+import { FiFigma } from "react-icons/fi"
 import { LiaNodeJs } from "react-icons/lia"
-import { SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiReact, SiRedux, SiTypescript } from "react-icons/si"
+import { SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiReact, SiRedux, SiSocketdotio, SiTypescript } from "react-icons/si"
 
 
 const Navitems = [
@@ -134,7 +135,24 @@ const skills: skills[] = [
         name: "Java",
         icon: DiJava,
         color: "#007396"
-    }
+    },
+    {
+        id:17,
+        name:"Illustrator",
+        icon:DiIllustrator,
+        color:"#FF9A00",
+    },
+    {
+        id:18,
+        name:"WebSocket",
+        icon:SiSocketdotio,
+        color:"#3776AB",
+    },
+    {
+        id:19,
+        name:"Figma",
+        icon:FiFigma,
+        color:"#F24E1E",}
 
 ]
 
