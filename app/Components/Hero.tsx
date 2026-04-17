@@ -39,20 +39,18 @@ export const Hero = () => {
       
       <p className="text-foreground/50 tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
         {data.AboutMe.text}{" "}
-        <span className="text-sky-500 bg-sky-500/10 m-1 text px-1 py-0.5 shadow-[0px_0px_5px_inset] card">
+        <span className="text-sky-500 text">
           {data.AboutMe.text1}
         </span>
         {data.AboutMe.text2}
         <span
-          className="text-pink-500 bg-pink-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0px_5px_inset] card"
+          className="text-pink-500 text "
         >
           {data.AboutMe.text3}
         </span>
         {data.AboutMe.text4}
         <span
-          className="text-teal-500 bg-teal-500/10 m-1 text px-1 py-0.5
-            shadow-[0_0_5px_inset] card"
+          className="text-teal-500 text"
         >
           {data.AboutMe.text5}
         </span>
