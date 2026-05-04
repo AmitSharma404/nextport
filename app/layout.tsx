@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Aldrich } from "next/font/google";
 import "./globals.css";
+import { Jura } from "next/font/google";
 import Head from "next/head";
 import { MyContextProvider } from "./Store/Context";
 
-const geo = Lexend({
+const jura = Jura({
   subsets: ["latin"],
-  weight: ["200", "300", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
 });
+
+const aldrich = Aldrich({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 
 export const metadata: Metadata = {
   title: "Amit.dev",
@@ -29,9 +36,7 @@ export default function RootLayout({
           <link rel="icon" href="/name.jpeg" />
         </Head>
         <body
-          className={
-            geo.className + "bg-white dark:bg-black text-black dark:text-white"
-          }
+          className={`${jura.className} ${aldrich.className} bg-white dark:bg-black text-black dark:text-white`}
         >
           <MyContextProvider>{children}</MyContextProvider>
         </body>
