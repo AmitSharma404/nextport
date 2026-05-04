@@ -37,7 +37,7 @@ interface skills {
     name: string,
     icon: IconType,
     color: string
-}[];
+};
 
 const skills: skills[] = [
     {
@@ -135,12 +135,6 @@ const skills: skills[] = [
         name: "Java",
         icon: DiJava,
         color: "#007396"
-    },
-    {
-        id:17,
-        name:"Illustrator",
-        icon:DiIllustrator,
-        color:"#FF9A00",
     },
     {
         id:18,
