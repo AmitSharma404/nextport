@@ -69,8 +69,6 @@ body {
 
 @utility skillbtn{
   @apply px-2 py-0.5 text-sm transition text-foreground/80 border border-foreground/50;
-  border-radius: 2rem;
-  corner-shape: squircle;
 }
 @utility text{
   @apply items-center justify-center inline-block p-1 font-normal;
@@ -79,8 +77,8 @@ body {
   border-radius: 90px;
   corner-shape: squircle;
 }
+
 @utility card {
-  border-radius: 30px;
-  corner-shape: squircle;
+  @apply [corner-shape:squircle] rounded-[20px]
 }
 

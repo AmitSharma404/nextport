@@ -2,7 +2,7 @@
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import data from "../data/data";
-import myimg from "../amit.jpg";
+import myimg from "../tom calling.png";
 import { Skills } from "./Skills";
 import { Footer } from "./footer";
 import Link from "next/link";
@@ -23,7 +23,7 @@ export const Hero = () => {
             className="w-24 h-24
             sm:mx-4 overflow-hidden card relative rotate-354 shadow-lg shadow-neutral-600/50"
           >
-            <Image src={myimg} alt="Amit Sharma" className="top-0 absolute" width={300} height={300} />
+            <Image src={myimg} alt="Amit Sharma" className="scale-140 top-3 absolute" width={500} height={500} />
           </div>
         </div>
         <div className="">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import img from "../3.png";
-import img2 from "../2.png";
+import img2 from "../Lens.png";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
@@ -13,7 +13,6 @@ export const Projects = () => {
           width={350}
           height={300}
           alt="img"
-          className="card"
         />
         <div>
           <h3 className="text-lg font-normal mb-2">Cool Card</h3>
@@ -43,21 +42,20 @@ export const Projects = () => {
           width={350}
           height={300}
           alt="img"
-          className="card"
         />
         <div>
-          <h3 className="text-lg font-normal mb-2">Spotify Clone</h3>
+          <h3 className="text-lg font-normal mb-2">Supply Lens</h3>
           <p className="text-foreground/70 mb-4 text-sm">
-            A clean UI of Spotify
+            for supply Chain manage
           </p>
           <div className="flex gap-2">
-            <Link href="https://amitsharma404.github.io/spotifyUI/" className="btn hover:bg-foreground/10">
+            <Link href="https://supplylens.in" className="btn hover:bg-foreground/10">
               <LuSquareArrowOutUpRight />
-              Live
+              Soon
             </Link>
            
             <Link
-              href="https://github.com/AmitSharma404/spotifyUI"
+              href="https://github.com/AmitSharma404/SupplyLens"
               className="btn hover:bg-foreground/10"
             >
               {" "}
