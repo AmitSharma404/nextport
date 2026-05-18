@@ -37,7 +37,7 @@ export const Hero = () => {
         </div>
       </div>
       
-      <p className="text-foreground/50 tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
+      <p className="text-foreground tracking-wide font-light border-dashed text-sm sm:text-[16px] py-4">
         {data.AboutMe.text}{" "}
         <span className="text-sky-500 text">
           {data.AboutMe.text1}
